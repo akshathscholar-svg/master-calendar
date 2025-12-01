@@ -1,0 +1,226 @@
+/* Make the whole page look nicer */
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0f172a;           /* dark blue background */
+  color: #e5e7eb;                /* light gray text */
+}
+
+/* Header at the top */
+
+header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #1f2937;
+  background: #020617;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+/* Main content */
+
+main {
+  padding: 24px;
+}
+
+/* Placeholder box where the calendar will go */
+
+#calendar-placeholder {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #111827;
+  border: 1px solid #1f2937;
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+/* Container around legend + grid */
+.calendar-container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Legend row */
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.legend-item {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* Little colored dots before legend text */
+.legend-item::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+/* Different colors per category */
+.legend-school::before {
+  background: #bfdbfe;
+}
+.legend-club::before {
+  background: #93c5fd;
+}
+.legend-sports::before {
+  background: #fecaca;
+}
+.legend-homework::before {
+  background: #bbf7d0;
+}
+.legend-aops-math::before {
+  background: #fed7aa;
+}
+.legend-aops-code::before {
+  background: #e9d5ff;
+}
+.legend-sci-robot::before {
+  background: #f9a8d4;
+}
+.legend-break::before {
+  background: #fef3c7;
+}
+
+/* The main grid: 7 columns */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  background: #020617;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #1f2937;
+}
+
+/* Each day column */
+.calendar-day {
+  border-left: 1px solid #1f2937;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+}
+
+.calendar-day:first-child {
+  border-left: none;
+}
+
+/* Day header (day name + date) */
+.calendar-day-header {
+  padding: 8px 6px;
+  text-align: center;
+  background: #020617;
+  border-bottom: 1px solid #1f2937;
+}
+
+.calendar-day-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.calendar-day-date {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* Day body where events will go */
+.calendar-day-body {
+  padding: 8px 6px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+
+/* Responsive: fewer columns on narrow screens */
+@media (max-width: 900px) {
+  .calendar-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .calendar-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+/* Event cards inside each day */
+
+.event {
+  border-radius: 8px;
+  padding: 4px 6px;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #0f172a;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(15, 23, 42, 0.2);
+}
+
+/* Time line at top of an event */
+.event-time {
+  font-weight: 600;
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+/* Title line under the time */
+.event-title {
+  font-size: 11px;
+}
+
+/* Category color variations */
+
+.event-school {
+  background: #bfdbfe;   /* light blue */
+}
+
+.event-club {
+  background: #93c5fd;   /* medium blue */
+}
+
+.event-sports {
+  background: #fecaca;   /* light red/pink */
+}
+
+.event-homework {
+  background: #bbf7d0;   /* light green */
+}
+
+.event-aops-math {
+  background: #fed7aa;   /* light orange */
+}
+
+.event-aops-code {
+  background: #e9d5ff;   /* light purple */
+}
+
+.event-sci-robot {
+  background: #f9a8d4;   /* pink */
+}
+
+.event-break {
+  background: #fef3c7;   /* pale yellow */
+}

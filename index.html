@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Akshath's Master Calendar</title>
+
+    <!-- Load your CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Akshath's Master Calendar</h1>
+      <p>Week of Dec 1 – Dec 7</p>
+    </header>
+
+    <main>
+      <p>If you can see the colors and layout change, CSS is working 🎉</p>
+
+      <section class="calendar-container">
+        <!-- Legend -->
+        <div class="calendar-legend">
+          <span class="legend-item legend-school">School</span>
+          <span class="legend-item legend-club">Clubs / Robotics</span>
+          <span class="legend-item legend-sports">Sports / Workout</span>
+          <span class="legend-item legend-homework">Homework</span>
+          <span class="legend-item legend-aops-math">AoPS Math</span>
+          <span class="legend-item legend-aops-code">AoPS Coding</span>
+          <span class="legend-item legend-sci-robot">Science Fair / ROBOTC</span>
+          <span class="legend-item legend-break">Break / Commute</span>
+        </div>
+
+        <!-- Weekly calendar grid -->
+        <div class="calendar-grid">
+          <!-- MONDAY -->
+          <div class="calendar-day">
+            <div class="calendar-day-header">
+              <div class="calendar-day-name">Mon</div>
+              <div class="calendar-day-date">Dec 1</div>
+            </div>
+            <div class="calendar-day-body">
+              <div class="event event-sports">
+                <div class="event-time">06:30–07:00</div>
+                <div class="event-title">Home workout</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:00–07:50</div>
+                <div class="event-title">Breakfast / get ready</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:50–08:20</div>
+                <div class="event-title">Commute</div>
+              </div>
+
+              <div class="event event-school">
+                <div class="event-time">08:30–15:15</div>
+                <div class="event-title">School</div>
+              </div>
+
+              <div class="event event-club">
+                <div class="event-time">15:15–16:30</div>
+                <div class="event-title">Robotics club</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">16:30–17:00</div>
+                <div class="event-title">Commute home</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">17:00–17:15</div>
+                <div class="event-title">Snack / short break</div>
+              </div>
+
+              <div class="event event-homework">
+                <div class="event-time">17:15–18:30</div>
+                <div class="event-title">Signature homework</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">18:30–19:00</div>
+                <div class="event-title">Dinner</div>
+              </div>
+
+              <div class="event event-aops-math">
+                <div class="event-time">19:00–20:30</div>
+                <div class="event-title">AoPS Number Theory</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">20:30–21:15</div>
+                <div class="event-title">Free / relax</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TUESDAY -->
+          <div class="calendar-day">
+            <div class="calendar-day-header">
+              <div class="calendar-day-name">Tue</div>
+              <div class="calendar-day-date">Dec 2</div>
+            </div>
+            <div class="calendar-day-body">
+              <div class="event event-sports">
+                <div class="event-time">06:30–07:00</div>
+                <div class="event-title">Home workout</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:00–07:50</div>
+                <div class="event-title">Breakfast / get ready</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:50–08:20</div>
+                <div class="event-title">Commute</div>
+              </div>
+
+              <div class="event event-school">
+                <div class="event-time">08:30–15:15</div>
+                <div class="event-title">School</div>
+              </div>
+
+              <div class="event event-club">
+                <div class="event-time">15:15–16:15</div>
+                <div class="event-title">Business club</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">16:15–16:45</div>
+                <div class="event-title">Commute</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">16:45–17:00</div>
+                <div class="event-title">Snack / mini break</div>
+              </div>
+
+              <div class="event event-homework">
+                <div class="event-time">17:00–18:00</div>
+                <div class="event-title">Signature homework</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">18:00–18:25</div>
+                <div class="event-title">Dinner</div>
+              </div>
+
+              <div class="event event-aops-code">
+                <div class="event-time">18:30–20:00</div>
+                <div class="event-title">AoPS Intro to Python (class)</div>
+              </div>
+
+              <div class="event event-aops-math">
+                <div class="event-time">20:00–20:45</div>
+                <div class="event-title">AoPS Number Theory</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">20:45–21:15</div>
+                <div class="event-title">Wind down</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- WEDNESDAY -->
+          <div class="calendar-day">
+            <div class="calendar-day-header">
+              <div class="calendar-day-name">Wed</div>
+              <div class="calendar-day-date">Dec 3</div>
+            </div>
+            <div class="calendar-day-body">
+              <div class="event event-sports">
+                <div class="event-time">06:30–07:00</div>
+                <div class="event-title">Home workout</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:00–07:50</div>
+                <div class="event-title">Breakfast / get ready</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:50–08:20</div>
+                <div class="event-title">Commute</div>
+              </div>
+
+              <div class="event event-school">
+                <div class="event-time">08:30–15:15</div>
+                <div class="event-title">School</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">15:15–15:45</div>
+                <div class="event-title">Travel to tennis</div>
+              </div>
+
+              <div class="event event-sports">
+                <div class="event-time">16:00–18:00</div>
+                <div class="event-title">Tennis</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">18:00–18:30</div>
+                <div class="event-title">Travel home</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">18:30–19:00</div>
+                <div class="event-title">Shower + dinner</div>
+              </div>
+
+              <div class="event event-homework">
+                <div class="event-time">19:00–20:15</div>
+                <div class="event-title">Signature homework</div>
+              </div>
+
+              <div class="event event-aops-math">
+                <div class="event-time">20:15–21:00</div>
+                <div class="event-title">AoPS Number Theory</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- THURSDAY -->
+          <div class="calendar-day">
+            <div class="calendar-day-header">
+              <div class="calendar-day-name">Thu</div>
+              <div class="calendar-day-date">Dec 4</div>
+            </div>
+            <div class="calendar-day-body">
+              <div class="event event-sports">
+                <div class="event-time">06:30–07:00</div>
+                <div class="event-title">Home workout</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:00–07:50</div>
+                <div class="event-title">Breakfast / get ready</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:50–08:20</div>
+                <div class="event-title">Commute</div>
+              </div>
+
+              <div class="event event-school">
+                <div class="event-time">08:30–15:15</div>
+                <div class="event-title">School</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">15:15–15:45</div>
+                <div class="event-title">Travel to tennis</div>
+              </div>
+
+              <div class="event event-sports">
+                <div class="event-time">16:00–18:00</div>
+                <div class="event-title">Tennis</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">18:00–18:30</div>
+                <div class="event-title">Travel home</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">18:30–19:00</div>
+                <div class="event-title">Shower + dinner</div>
+              </div>
+
+              <div class="event event-aops-math">
+                <div class="event-time">19:00–20:00</div>
+                <div class="event-title">AoPS Number Theory</div>
+              </div>
+
+              <div class="event event-aops-code">
+                <div class="event-time">20:00–21:00</div>
+                <div class="event-title">AoPS Python practice</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FRIDAY -->
+          <div class="calendar-day">
+            <div class="calendar-day-header">
+              <div class="calendar-day-name">Fri</div>
+              <div class="calendar-day-date">Dec 5</div>
+            </div>
+            <div class="calendar-day-body">
+              <div class="event event-sports">
+                <div class="event-time">06:30–07:00</div>
+                <div class="event-title">Home workout</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:00–07:50</div>
+                <div class="event-title">Breakfast / get ready</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">07:50–08:20</div>
+                <div class="event-title">Commute</div>
+              </div>
+
+              <div class="event event-school">
+                <div class="event-time">08:30–15:15</div>
+                <div class="event-title">School</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">15:15–15:45</div>
+                <div class="event-title">Commute home</div>
+              </div>
+
+              <div class="event event-homework">
+                <div class="event-time">15:45–17:00</div>
+                <div class="event-title">Signature homework</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">17:00–17:30</div>
+                <div class="event-title">Break / dinner</div>
+              </div>
+
+              <div class="event event-aops-math">
+                <div class="event-time">17:30–19:30</div>
+                <div class="event-title">AoPS Number Theory (deep block)</div>
+              </div>
+
+              <div class="event event-sci-robot">
+                <div class="event-time">19:30–20:30</div>
+                <div class="event-title">Science Fair / ROBOTC</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">20:30–21:15</div>
+                <div class="event-title">Free time</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SATURDAY -->
+          <div class="calendar-day">
+            <div class="calendar-day-header">
+              <div class="calendar-day-name">Sat</div>
+              <div class="calendar-day-date">Dec 6</div>
+            </div>
+            <div class="calendar-day-body">
+              <div class="event event-aops-math">
+                <div class="event-time">09:00–11:00</div>
+                <div class="event-title">AoPS Number Theory</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">11:00–12:00</div>
+                <div class="event-title">Break / relax</div>
+              </div>
+
+              <div class="event event-homework">
+                <div class="event-time">12:00–13:00</div>
+                <div class="event-title">School homework / reading</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">13:00–14:00</div>
+                <div class="event-title">Free / lunch</div>
+              </div>
+
+              <div class="event event-aops-math">
+                <div class="event-time">14:00–15:30</div>
+                <div class="event-title">AoPS Number Theory problems</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">15:30–16:00</div>
+                <div class="event-title">Break</div>
+              </div>
+
+              <div class="event event-sci-robot">
+                <div class="event-time">16:00–17:00</div>
+                <div class="event-title">Science Fair / ROBOTC</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUNDAY -->
+          <div class="calendar-day">
+            <div class="calendar-day-header">
+              <div class="calendar-day-name">Sun</div>
+              <div class="calendar-day-date">Dec 7</div>
+            </div>
+            <div class="calendar-day-body">
+              <div class="event event-homework">
+                <div class="event-time">09:00–10:30</div>
+                <div class="event-title">Plan week + homework</div>
+              </div>
+
+              <div class="event event-aops-math">
+                <div class="event-time">10:30–12:00</div>
+                <div class="event-title">AoPS Number Theory review</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">12:00–14:00</div>
+                <div class="event-title">Family / lunch / chill</div>
+              </div>
+
+              <div class="event event-aops-math">
+                <div class="event-time">14:00–15:00</div>
+                <div class="event-title">AoPS Number Theory (mock style)</div>
+              </div>
+
+              <div class="event event-break">
+                <div class="event-time">15:00–16:00</div>
+                <div class="event-title">Break</div>
+              </div>
+
+              <div class="event event-aops-code">
+                <div class="event-time">16:00–17:00</div>
+                <div class="event-title">Python practice or SciFair/ROBOTC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Load your JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
